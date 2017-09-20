@@ -1,0 +1,19 @@
+ <view class="content">
+    <image class="main-bg" src="../asserts/img/bg.png"></image>
+    <block wx:for="{{myLogs}}">
+    <view class="item">{{item}}</view>
+    </block>
+
+    <view wx:for="{{myList}}" wx:for-index="idx" wx:for-item="list">
+      {{idx}}: {{list}}
+    </view>
+
+      <view wx:for="{{myListString}}" wx:for-index="idx" wx:for-item="listString">
+        {{idx}}: {{listString}}
+      </view>
+
+
+    <view wx:for="{{myLogs}}" wx:for-index="idx" wx:for-item="log">
+      {{idx}}: {{log}}
+    </view>
+</view> 
